@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourusername.github.io/portfolio/sitemap.xml
+
+# Disallow certain paths (if any)
+# Disallow: /private/
+# Disallow: /temp/

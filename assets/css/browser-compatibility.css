@@ -1,0 +1,86 @@
+/* ===================================
+   BROWSER COMPATIBILITY & PREFIXES
+   =================================== */
+
+/* Flexbox with prefixes */
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Transform with prefixes */
+.transform-element {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+/* Transition with prefixes */
+.transition-element {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Animation with prefixes */
+@-webkit-keyframes example {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-moz-keyframes example {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes example {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Gradient with prefixes */
+.gradient-bg {
+    background: -webkit-linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+    background: -moz-linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+    background: -o-linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+    background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
+}
+
+/* Box Shadow with prefixes */
+.shadow-element {
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Border Radius with prefixes */
+.rounded-element {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Backdrop Filter with prefixes */
+.blur-element {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+/* User Select with prefixes */
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Appearance with prefixes */
+.no-appearance {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-mohamed-ahmed",
+  "version": "1.0.0",
+  "description": "Professional Software Testing Portfolio - Mohamed Ahmed",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 || python3 -m http.server 8000",
+    "serve": "npx http-server -p 8000 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "software-testing",
+    "qa",
+    "quality-assurance",
+    "automation",
+    "web-development"
+  ],
+  "author": "Mohamed Ahmed <moh3med.elshabasy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/portfolio/issues"
+  },
+  "homepage": "https://yourusername.github.io/portfolio"
+}
