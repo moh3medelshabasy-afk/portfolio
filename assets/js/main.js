@@ -70,10 +70,10 @@ const NavigationModule = (() => {
 
             // Close menu on link click
             navLinks.forEach(link => {
-                link.onclick = () => {
+                link.addEventListener('click', () => {
                     menuIcon.classList.remove('bx-x');
                     navbar.classList.remove('active');
-                };
+                });
             });
         }
 

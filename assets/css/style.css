@@ -136,6 +136,10 @@ html {
 }
 
 /* Header & Navigation */
+#menu-icon {
+    display: none;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -5338,4 +5342,182 @@ textarea:focus-visible {
         position: -ms-sticky;
         position: sticky;
     }
+}
+
+/* ===================================
+   COMPREHENSIVE RESPONSIVE FIXES
+   =================================== */
+
+/* Large Tablets & Small Laptops */
+@media (max-width: 1024px) {
+    html {
+        font-size: 55%;
+    }
+    
+    .header {
+        padding: 2rem 4%;
+    }
+    
+    section {
+        padding: 10rem 4% 6rem;
+    }
+    
+    .home {
+        gap: 3rem;
+    }
+    
+    .home-img .profile-img {
+        width: 30rem;
+    }
+}
+
+/* Tablets (Portrait) */
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 3.6rem;
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        border-top: 1px solid rgba(46, 204, 113, 0.1);
+        display: none;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        margin-left: 0;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        padding-top: 15rem;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+
+    .home-img .profile-img {
+        width: 25rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-story-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .home-content h1 {
+        font-size: 3.8rem;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 28rem;
+        text-align: center;
+    }
+
+    .about-wrapper {
+        padding: 0 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .expertise-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-icons a {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+}
+
+/* Fix for horizontal overflow */
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+* {
+    max-width: 100%;
 }
